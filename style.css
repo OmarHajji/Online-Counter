@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #58a0c8;
+  background: radial-gradient(
+    circle,
+    rgba(88, 160, 200, 1) 0%,
+    rgba(17, 63, 103, 1) 100%
+  );
+}
+#counter {
+  background-color: #113f67;
+  width: 500px;
+  height: 600px;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  background-color: rgba(0, 0, 0, 0.301);
+  color: white;
+  transition: 0.3s all ease;
+  font-size: large;
+  border: 1px solid #f6f4f0;
+}
+button:hover {
+  background-color: #f6f4f0;
+  color: black;
+}
+.buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.change-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
+
+#minus-btn,
+#plus-btn,
+#reset-btn {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+#reset-btn {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+#target-btn {
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+.change-btn #minus-btn,
+.change-btn #plus-btn {
+  font-size: 50px;
+}
+#target-btn {
+  height: 30px;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#top-content {
+  color: #f6f4f0;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
